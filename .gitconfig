@@ -1,0 +1,23 @@
+[user]
+	name = Baptiste Langlade
+	email = baptouuuu@gmail.com
+[merge]
+[alias]
+	co = checkout
+	st = status
+	ci = commit
+[color]
+	ui = true
+[push]
+	default = simple
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
