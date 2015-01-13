@@ -2,14 +2,31 @@
 	name = Baptiste Langlade
 	email = baptouuuu@gmail.com
 [merge]
+	log = true
+	conflictStyle = diff3
 [alias]
+	t = tag
 	co = checkout
 	st = status
 	ci = commit
+	ca = commit --amend --no-edit
+	br = branch
+	bra = branch -avv
+	s = status
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	a = add -p
+	d = diff -w --color-words=.
+	ds = diff --staged -w --color-words=.
+	up = push
+	dw = pull
+	u = push
+	brc = !git remote prune origin && git branch --merged | grep -v \"\\*\" | grep -v \"^[[:space:]]*master$\" | xargs -n 1 git branch -d
+	sh = stash
+	sw = show
 [color]
 	ui = true
 [push]
-	default = simple
+	default = upstream
 [color "branch"]
 	current = yellow reverse
 	local = yellow
@@ -21,3 +38,5 @@
 	added = yellow
 	changed = green
 	untracked = cyan
+[core]
+	filemode = false
