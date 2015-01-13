@@ -1,10 +1,6 @@
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
     source $(brew --prefix)/etc/bash_completion
 fi
-alias mphp='/Applications/MAMP/bin/php/php5.5.3/bin/php'
-alias phpunit='/Applications/MAMP/bin/php/php5.5.3/bin/phpunit'
-alias mysql='/Applications/MAMP/Library/bin/mysql'
-alias mysqldump='/Applications/MAMP/Library/bin/mysqldump'
 alias s='open -a "Sublime Text 2"'
 
 colorflag="-G"
@@ -15,10 +11,6 @@ alias lsd="ls -lF ${colorflag} | grep "^d""
 
 alias ..="cd .."
 alias ...="cd ../../"
-
-alias sites="cd ~/Sites"
-alias sy="cd ~/Sites/Sy"
-alias innmind="cd ~/Sites/Innmind"
 
 alias c='pygmentize -O style=monokai -f console256 -g'
 
