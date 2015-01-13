@@ -2,6 +2,7 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
     source $(brew --prefix)/etc/bash_completion
 fi
 alias s='open -a "Sublime Text 2"'
+alias g='git'
 
 colorflag="-G"
 alias ls="command ls ${colorflag}"
